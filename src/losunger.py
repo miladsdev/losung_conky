@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 from datetime import date
+from pathlib import Path
 from xml_downloader import xml_downloader
 import os
 
@@ -10,8 +11,9 @@ class losunger:
     """
 
     def __init__(self) -> None:
-        self.data_path = r'data/'
+        self.data_path = r'' + str(Path.home()) + "/.config/losung_conky/" + 'data/'
         self.files = self.list_xml_files()
+        self.directory = str(Path.home()) + "/.config/losung_conky/"
 
     def list_xml_files(self):
         """

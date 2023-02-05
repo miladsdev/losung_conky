@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=conky
+Exec=conky --daemonize --pause=5 -c /home/milad/.config/losung_conky/conky.conf
+StartupNotify=false
+Terminal=false
