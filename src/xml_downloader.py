@@ -19,7 +19,7 @@ class xml_downloader:
         response = requests.get(url)
 
         if (os.path.exists(self.directory + "data/")):
-            os.makedirs(path)
+            os.makedirs(self.directory + "data/")
 
         with open(self.directory + "data/Losung_%s_XML.zip" % self.year, 'wb') as file:
             file.write(response.content)
