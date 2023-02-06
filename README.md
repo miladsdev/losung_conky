@@ -18,5 +18,5 @@ cp .losung_simple.desktop ../autostart/
 Adding losung_monitor (with system monitor) to autoload:
 ```bash
 cd .config/losung_conky
-cp .losung_simple_conky.desktop ../autostart/
+cp .losung_monitor.desktop ../autostart/
 ```
