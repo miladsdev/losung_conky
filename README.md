@@ -1,11 +1,16 @@
 # Losung Conky
 
 ## usage
-Running the config:
+Running the configs:
 ```bash
 git clone https://github.com/miladsdev/losung_conky.git ~/.config/losung_conky/
 cd .config/losung_conky
-conky -c conky.conf
+
+# simple losung
+conky -c losung_simple.conf
+
+# or losung + monitor
+conky -c losung_monitor.conf
 ```
 
 Adding losung_simple (without system monitor) to autoload:
