@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=conky
+Exec=/usr/bin/bash -c 'conky --daemonize --pause=5 -c /home/$USER/.config/losung_conky/losung_monitor.conf'
+StartupNotify=false
+Terminal=false
