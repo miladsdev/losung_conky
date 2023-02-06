@@ -18,7 +18,7 @@ class xml_downloader:
         url = "https://www.losungen.de/fileadmin/media-losungen/download/Losung_%s_XML.zip" % self.year
         response = requests.get(url)
 
-        if (os.path.exists(self.directory + "data/")):
+        if not os.path.exists(self.directory + "data/"):
             os.makedirs(self.directory + "data/")
 
         with open(self.directory + "data/Losung_%s_XML.zip" % self.year, 'wb') as file:
